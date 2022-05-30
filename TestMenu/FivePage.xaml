@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="TestMenu.FivePage">
+    <ContentView.Content>
+        <StackLayout>
+             <Label Text="Fiveth Page" TextColor="Red" FontSize="20"/>
+            <Button Text="Previous Page" Command="{Binding PreviousPage}"/>
+            <Button Text="First Page" Command="{Binding FirstPage}"/>
+            <Button Text="Second Page" Command="{Binding SecondPage}"/>
+            <Button Text="Third Page" Command="{Binding ThirdPage}"/>
+            <Button Text="Fourth Page" Command="{Binding FourthPage}"/>
+            <ListView ItemsSource="{Binding Users}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="#eee"
+                                         Orientation="Horizontal">
+                                    <Image Source="{Binding Image}"
+                                           HeightRequest="50"/>
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
+<!--<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Fiveth Page"
+    x:Class="TestMenu.FivePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Previous Page" Clicked="Button_Clicked_1"/>
+            <Button Text="First Page" Clicked="Button_Clicked_2"/>
+            <Button Text="Second Page" Clicked="Button_Clicked_3"/>
+            <Button Text="Third Page" Clicked="Button_Clicked_4"/>
+            <Button Text="Fourth Page" Clicked="Button_Clicked_5"/>
+            <ListView ItemsSource="{Binding Users}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="#eee"
+                                         Orientation="Horizontal">
+                                    <Image Source="{Binding Image}"
+                                           HeightRequest="50"/>
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>-->
+
+

@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestMenu.MainPage">
+
+    <StackLayout>
+        <Button Clicked="Button_Clicked"/>
+        <StackLayout Orientation="Horizontal" HeightRequest="50">
+            <ListView ItemsSource="{Binding Users}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="{Binding Image}" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Users}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="{Binding Image}" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="{Binding Image}" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                            
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="{Binding Image}" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="{Binding Image}" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="{Binding Image}" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HeightRequest="50">
+            <ListView ItemsSource="{Binding Users}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="{Binding Image}" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Users}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HeightRequest="50">
+            <ListView ItemsSource="{Binding Users}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Users}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HeightRequest="50">
+            <ListView ItemsSource="{Binding Users}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Users}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HeightRequest="50">
+            <ListView ItemsSource="{Binding Users}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Users}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3.png" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Vertical">
+                                    <Image Source="drink3" />
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding Product}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10"
+                                   HorizontalOptions="Center">
+                                <StackLayout BackgroundColor="#eee"
+                                         Orientation="Horizontal">
+                                    <Image Source="drink3" HeightRequest="30"/>
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

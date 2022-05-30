@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="TestMenu.ThirdPage">
+    <ContentView.Content>
+        <StackLayout>
+            <Label Text="Third Page" TextColor="Red" FontSize="20"/>
+            <Button Text="Next Page" Command="{Binding NextPage}"/>
+            <Button Text="Previous Page" Command="{Binding PreviousPage}"/>
+            <Button Text="First Page" Command="{Binding FirstPage}"/>
+            <ListView ItemsSource="{Binding Users}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="#eee"
+                                         Orientation="Horizontal">
+                                    <Image Source="{Binding Image}"
+                                           HeightRequest="50"/>
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
+
+<!--<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="TestMenu.ThirdPage"
+    Title="Third Page">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Next Page" Clicked="Button_Clicked_2"/>
+            <Button Text="Previous Page" Clicked="Button_Clicked"/>
+            <Button Text="First Page" Clicked="Button_Clicked_1"/>
+            <ListView ItemsSource="{Binding Users}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="#eee"
+                                         Orientation="Horizontal">
+                                    <Image Source="{Binding Image}"
+                                           HeightRequest="50"/>
+                                    <Label Text="{Binding Name}"
+                                           TextColor="#f35e20" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>-->
+
+

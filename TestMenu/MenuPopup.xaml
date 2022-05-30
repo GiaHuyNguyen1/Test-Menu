@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rg:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:rg="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestMenu.MenuPopup"
+              x:Name="menuDialog">
+    <ContentPage.Content>
+        <Frame
+            x:Name="frameMenu"
+            VerticalOptions="Start"
+            HorizontalOptions="Start"
+            BackgroundColor="White"
+            CornerRadius="6"
+            WidthRequest="250"
+            Padding="0,0,0,0"
+            Margin="0,0,0,15">
+            <StackLayout Spacing="0"
+                         Orientation="Vertical">
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="FillAndExpand"
+                             Padding="15,15,15,0">
+                    <Label x:Name="popupTitle"
+                           Text="{Binding MenuTitle, Source={x:Reference menuDialog}}"
+                           HorizontalOptions="StartAndExpand"
+                           TextColor="Black"
+                           FontSize="16"
+                           VerticalTextAlignment="Center"/>
+                </StackLayout>
+                <CollectionView x:Name="lv_items"
+                                Margin="0,5,0,0"
+                                ItemsSource="{Binding MenuModelItems, Source={x:Reference menuDialog}}"
+                                VerticalOptions="Start"
+                                SelectionMode="Single"
+                                VerticalScrollBarVisibility="Always"
+                                SelectedItem="{Binding SelectedMenuItem, Source={x:Reference menuDialog}}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout x:Name="item_view"
+                                         HeightRequest="30"
+                                         HorizontalOptions="Start"
+                                         WidthRequest="200"
+                                         Padding="15,5,15,5"
+                                         Orientation="Horizontal">
+                                <Image Source="{Binding IConText}" />
+                                <Label x:Name="label"
+                                       Text="{Binding Label}"
+                                       TextColor="Black"
+                                       FontSize="16"
+                                       HorizontalOptions="StartAndExpand"
+                                       VerticalOptions="Center" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</rg:PopupPage>
